@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:machine_arts/Login.dart';
+import 'package:machine_arts/ResultPage.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Machine Arts',
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -28,6 +30,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String query = '';
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -53,13 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                ConstrainedBox(
-                  constraints: BoxConstraints(maxWidth: 500),
-                  child: AspectRatio(
-                    aspectRatio: 3.8,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  ConstrainedBox(
+                    constraints: BoxConstraints(maxWidth: 500),
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
@@ -76,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Expanded(
+                            FittedBox(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -92,17 +96,45 @@ class _MyHomePageState extends State<MyHomePage> {
                                   SizedBox(height: 10),
                                   SizedBox(
                                     height: 40,
-                                    width: 200,
+                                    width: 250,
                                     child: TextField(
+                                      onChanged: (val) {
+                                        query = val;
+                                        setState(() {});
+                                      },
+                                      style: TextStyle(fontSize: 13),
                                       decoration: InputDecoration(
-                                        prefixIcon: Image.asset(
-                                          'assets/search.png',
+                                        hintText: 'Введите название конкурента',
+                                        hintStyle: TextStyle(fontSize: 13),
+                                        prefixIconConstraints: BoxConstraints(
+                                          maxHeight: 35,
+                                          maxWidth: 35,
+                                        ),
+                                        prefixIcon: Padding(
+                                          padding: EdgeInsets.all(10),
+                                          child: Image.asset(
+                                            'assets/search.png',
+                                          ),
                                         ),
                                         suffixIcon: IconButton(
-                                          onPressed: () {},
-                                          icon: Image.asset('assets/go.png'),
+                                          onPressed: () async {
+                                            Navigator.of(context).push(
+                                              MaterialPageRoute(
+                                                builder:
+                                                    (context) => Resultpage(
+                                                      search: query,
+                                                    ),
+                                              ),
+                                            );
+                                          },
+                                          icon: Image.asset(
+                                            'assets/go.png',
+                                            width: 24,
+                                            height: 24,
+                                          ),
                                         ),
-                                        labelText: "Enter Email",
+                                        labelText:
+                                            "Введите название конкурента",
                                         fillColor: Colors.white,
                                         focusedBorder: OutlineInputBorder(
                                           borderRadius: BorderRadius.circular(
@@ -124,34 +156,26 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(height: 10),
                                 ],
                               ),
                             ),
-                            SizedBox(
-                              width: 150,
-                              child: Image.asset('assets/social.png'),
-                            ),
+                            if (kIsWeb)
+                              ConstrainedBox(
+                                constraints: BoxConstraints(maxWidth: 150),
+                                child: Image.asset('assets/social.png'),
+                              ),
                           ],
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
       ],
     );
   }
-
-  // _loadConcurrents() {
-  //   final result = http.read(
-  //     Uri.https('newsapi.org', 'v2/top-headlines', {
-  //       'country': 'us',
-  //       'category': selectedItem,
-  //       'apiKey': 'a09d182c6ccd4a4aae4de710b7eba83a',
-  //     }),
-  //   );
-  // }
 }

@@ -1,0 +1,92 @@
+{
+  "bloggers": [
+    {
+      "name": "Юрий Дудь",
+      "type": "YouTube",
+      "subscribers": "10.2 млн",
+      "description": "интервью, журналистика",
+      "bio": "Автор нашумевших интервью с политиками, артистами и учёными. Основатель журнала «Красная таблетка».",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/28532/pub_5cd03e49d31aa100b345353d_5cd043ee55033c00b3b3ed67/scale_1200"
+    },
+    {
+      "name": "Илья Варламов",
+      "type": "YouTube",
+      "subscribers": "3.8 млн",
+      "description": "урбанистика, путешествия",
+      "bio": "Блогер-урбанист, критик городской среды. Путешествует по миру, анализируя инфраструктуру.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1101166/pub_5cd03e49d31aa100b345353d_5cd0454ae6420f00b3fb7e2c/scale_1200"
+    },
+    {
+      "name": "Катя Клэп (CLAP)",
+      "type": "YouTube",
+      "subscribers": "2.1 млн",
+      "description": "развлечения, стримы",
+      "bio": "Экс-участница «Дом-2», теперь создаёт юмористические ролики и стримит на Twitch.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1592433/pub_5cd03e49d31aa100b345353d_5cd046a14900f400af338cf6/scale_1200"
+    },
+    {
+      "name": "TheBrianMaps",
+      "type": "YouTube",
+      "subscribers": "1.5 млн",
+      "description": "аналитика, история",
+      "bio": "Разбирает исторические события и геополитику в формате документальных расследований.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1863639/pub_5cd03e49d31aa100b345353d_5cd047aafd2dc300af7bfe41/scale_1200"
+    },
+    {
+      "name": "Михаил Литвин (Литвин LIVE)",
+      "type": "YouTube",
+      "subscribers": "1.9 млн",
+      "description": "политика, расследования",
+      "bio": "Журналист-расследователь, освещает коррупционные скандалы и политику России.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1542444/pub_5cd03e49d31aa100b345353d_5cd04f80a2387100b305520e/scale_1200"
+    },
+    {
+      "name": "STOPGAMED (Александр Рыков)",
+      "type": "Twitch",
+      "subscribers": "0.8 млн",
+      "description": "новости игр",
+      "bio": "Один из главных игровых обозревателей Рунета. Основатель портала Stopgame.ru.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1900011/pub_5cd03e49d31aa100b345353d_5cd0496e8b758300b4f82863/scale_1200"
+    },
+    {
+      "name": "Эльданиз (EldaniZ)",
+      "type": "Twitch",
+      "subscribers": "0.5 млн",
+      "description": "стримы, GTA RP",
+      "bio": "Популярный стример, известен по ролевым серверам GTA и коллабам с другими блогерами.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1244179/pub_5cd03e49d31aa100b345353d_5cd04ba7c3a10000b59adc9e/scale_1200"
+    },
+    {
+      "name": "Дмитрий Пучков (Goblin)",
+      "type": "Telegram",
+      "subscribers": "0.3 млн",
+      "description": "переводы, политика",
+      "bio": "Переводчик голливудских фильмов (например, «Криминальное чтиво»), автор сатирических политических постов.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1535103/pub_5cd03e49d31aa100b345353d_5cd04a71583aa800af53b9d8/scale_1200"
+    },
+    {
+      "name": "Незыгарь",
+      "type": "Telegram",
+      "subscribers": "0.7 млн",
+      "description": "аналитика",
+      "bio": "Анонимный канал о геополитике и внутренней политике России. Консервативный уклон.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/248942/pub_5cd03e49d31aa100b345353d_5cd04d30a2387100b30551f8/scale_1200"
+    },
+    {
+      "name": "Хабиб (Хабиб Нурмагомедов)",
+      "type": "TikTok",
+      "subscribers": "5.4 млн",
+      "description": "спорт, мотивация",
+      "bio": "Экс-чемпион UFC, сейчас публикует мотивационные ролики и тренировки.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1857554/pub_5cd03e49d31aa100b345353d_5cd04e384900f400af338d2e/scale_1200"
+    },
+    {
+      "name": "Данила Поперечный",
+      "type": "TikTok",
+      "subscribers": "3.2 млн",
+      "description": "юмор, скетчи",
+      "bio": "Стендап-комик, автор абсурдных скетчей. Ранее вёл шоу «Апвоут» на YouTube.",
+      "photo_url": "https://avatars.dzeninfra.ru/get-zen_doc/1542444/pub_5cd03e49d31aa100b345353d_5cd04f80a2387100b305520e/scale_1200"
+    }
+  ]
+}
